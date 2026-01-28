@@ -1,0 +1,14 @@
+../Common/StdUtil.h:165:28:stdUtil_putChar	16	static
+../Common/minirtos.c:62:6:minirtos_Queue_Create	24	static
+../Common/minirtos.c:100:6:minirtos_Queue_Send	48	static,ignoring_inline_asm
+../Common/minirtos.c:134:6:minirtos_Queue_Receive	48	static,ignoring_inline_asm
+../Common/minirtos.c:165:10:minirtos_Queue_Count	16	static
+../Common/minirtos.c:182:6:minirtos_Queue_Flush	32	static,ignoring_inline_asm
+../Common/minirtos.c:205:6:minirtos_Init	4	static
+../Common/minirtos.c:238:6:minirtos_AddTask	32	static
+../Common/minirtos.c:343:6:minirtos_RemoveTask	24	static
+../Common/minirtos.c:388:6:minirtos_PauseTask	16	static
+../Common/minirtos.c:412:6:minirtos_ResumeTask	16	static
+../Common/minirtos.c:451:6:minirtos_ModifyTask	24	static
+../Common/minirtos.c:496:15:minirtos_GetTaskStatus	16	static
+../Common/minirtos.c:521:6:minirtos_Scheduler	32	static

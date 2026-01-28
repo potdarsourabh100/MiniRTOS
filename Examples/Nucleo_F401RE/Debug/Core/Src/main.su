@@ -1,0 +1,9 @@
+C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/StdUtil.h:165:28:stdUtil_putChar	16	static
+../Core/Src/main.c:66:6:LED_task	8	static
+../Core/Src/main.c:71:6:UART_task	8	static
+../Core/Src/main.c:81:5:main	8	static
+../Core/Src/main.c:135:6:SystemClock_Config	88	static
+../Core/Src/main.c:182:13:MX_TIM4_Init	32	static
+../Core/Src/main.c:227:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:260:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:302:6:Error_Handler	4	static,ignoring_inline_asm
