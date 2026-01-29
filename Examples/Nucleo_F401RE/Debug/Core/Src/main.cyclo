@@ -1,9 +1,8 @@
-C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/StdUtil.h:165:28:stdUtil_putChar	1
-../Core/Src/main.c:66:6:LED_task	1
-../Core/Src/main.c:71:6:UART_task	1
-../Core/Src/main.c:81:5:main	1
-../Core/Src/main.c:135:6:SystemClock_Config	3
-../Core/Src/main.c:182:13:MX_TIM4_Init	4
-../Core/Src/main.c:227:13:MX_USART2_UART_Init	2
-../Core/Src/main.c:260:13:MX_GPIO_Init	1
-../Core/Src/main.c:302:6:Error_Handler	1
+C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MiniRTOS/Examples/Nucleo_F401RE/Common/StdUtil.h:165:28:stdUtil_putChar	1
+../Core/Src/main.c:63:6:LED_task	1
+../Core/Src/main.c:68:6:UART_task	1
+../Core/Src/main.c:78:5:main	1
+../Core/Src/main.c:129:6:SystemClock_Config	3
+../Core/Src/main.c:176:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:209:13:MX_GPIO_Init	1
+../Core/Src/main.c:251:6:Error_Handler	1

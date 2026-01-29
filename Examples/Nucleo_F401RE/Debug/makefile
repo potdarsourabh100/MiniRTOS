@@ -61,8 +61,8 @@ all: main-build
 main-build: MiniRTOS.elf secondary-outputs
 
 # Tool invocations
-MiniRTOS.elf MiniRTOS.map: $(OBJS) $(USER_OBJS) C:\Sourabh_Workspace\My_Personal_Project_Workspaces\MicroScheduler\MiniRTOS\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "MiniRTOS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Sourabh_Workspace\My_Personal_Project_Workspaces\MicroScheduler\MiniRTOS\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MiniRTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+MiniRTOS.elf MiniRTOS.map: $(OBJS) $(USER_OBJS) C:\Sourabh_Workspace\My_Personal_Project_Workspaces\MiniRTOS\Examples\Nucleo_F401RE\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "MiniRTOS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Sourabh_Workspace\My_Personal_Project_Workspaces\MiniRTOS\Examples\Nucleo_F401RE\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MiniRTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

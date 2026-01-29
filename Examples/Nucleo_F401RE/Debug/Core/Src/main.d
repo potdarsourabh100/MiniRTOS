@@ -24,13 +24,11 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/StdUtil.h \
- C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/minirtos.h \
- C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/StdUtil.h \
- C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/Version.h \
+ C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MiniRTOS/Examples/Nucleo_F401RE/Common/StdUtil.h \
+ C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MiniRTOS/Examples/Nucleo_F401RE/Common/minirtos.h \
+ C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MiniRTOS/Examples/Nucleo_F401RE/Common/StdUtil.h \
+ C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MiniRTOS/Examples/Nucleo_F401RE/Common/Version.h \
  ../Drivers/CMSIS/Include/cmsis_gcc.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -58,11 +56,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/StdUtil.h:
-C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/minirtos.h:
-C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/StdUtil.h:
-C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MicroScheduler/MiniRTOS/Common/Version.h:
+C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MiniRTOS/Examples/Nucleo_F401RE/Common/StdUtil.h:
+C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MiniRTOS/Examples/Nucleo_F401RE/Common/minirtos.h:
+C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MiniRTOS/Examples/Nucleo_F401RE/Common/StdUtil.h:
+C:/Sourabh_Workspace/My_Personal_Project_Workspaces/MiniRTOS/Examples/Nucleo_F401RE/Common/Version.h:
 ../Drivers/CMSIS/Include/cmsis_gcc.h:

@@ -40,7 +40,7 @@ No context switching or stack management is involved.
 ---
 
 ## File Structure
-
+```c
 MiniRTOS/
 │
 ├── minirtos.c        - Core scheduler and queue implementation
@@ -48,7 +48,7 @@ MiniRTOS/
 ├── StdUtil.h         - Utility macros and helper definitions
 ├── Version.h         - Version and build information
 └── README.md
-
+```
 ---
 
 ## Getting Started
