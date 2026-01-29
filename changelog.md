@@ -1,9 +1,4 @@
 
----
-
-## ✅ CHANGELOG.md (First Release)
-
-```md
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -45,7 +40,3 @@ All notable changes to this project will be documented in this file.
 - No preemption or context switching
 - No software timers or synchronization primitives
 - Requires external system tick increment
-
----
-
-*This is the first public release of MiniRTOS and serves as a stable foundation for future enhancements.*
