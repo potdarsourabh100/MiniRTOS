@@ -59,8 +59,6 @@ typedef struct _Task_Descriptor_t {
     - taskStatus → Defines if the task is paused, scheduled, one-shot, etc.
     - gptrTaskNext → Links tasks together in a circular list.
 
---- 
-
 ## 📌 Task States
 
 | State | Meaning |
@@ -72,8 +70,6 @@ typedef struct _Task_Descriptor_t {
 | ``TASK_PAUSE`` | Task execution paused |
 | ``TASK_RUNNING`` | Task is currently executing |
 | ``TASK_NOT_FOUND`` | Error state if descriptor invalid |
-
----
 
 ## 📌 Queue Operations
 MiniRTOS includes a simple interrupt-safe queue mechanism:
@@ -96,39 +92,29 @@ typedef struct {
     - Flush Queue → minirtos_Queue_Flush()
     - All operations are interrupt-safe using critical sections.
 
----
-
 ## 📌 Scheduler Working Step-by-Step
-    The scheduler (minirtos_Scheduler) runs in an infinite loop:
-
-    - Check if tasks exist  
-        - If no tasks are added, scheduler does nothing.
-
-    - Pick current task  
-        - Scheduler points to the current task in the circular list.
-
-    - Check task status
-        - If TASK_PAUSE, skip.
-        - If active, check if its plannedTask time has elapsed.
-
-    - Execute task
-        - If one-shot → run once, then pause.
-        - If periodic → run, then reschedule plannedTask.
-
-    - Move to next task  
-        - Scheduler pointer advances to the next task in the circular list.
-
-    - Repeat forever  
-        - This creates a cooperative round-robin execution model.
-
----
+The scheduler (minirtos_Scheduler) runs in an infinite loop:
+- Check if tasks exist  
+  - If no tasks are added, scheduler does nothing.
+- Pick current task  
+  - Scheduler points to the current task in the circular list.
+- Check task status
+  - If TASK_PAUSE, skip.
+  - If active, check if its plannedTask time has elapsed.
+- Execute task
+  - If one-shot → run once, then pause.
+  - If periodic → run, then reschedule plannedTask.
+- Move to next task  
+  - Scheduler pointer advances to the next task in the circular list.
+- Repeat forever  
+   - This creates a cooperative round-robin execution model.
 
 ## 🚀 Getting Started
-    1. **Include MiniRTOS**
+1. **Include MiniRTOS**
     ```c
         #include "minirtos.h"
     ```
-    2. **Create Tasks**
+2. **Define Tasks**
     ```c
         Task_Descriptor_t ledTask;
         Task_Descriptor_t queueconsumer;
@@ -165,7 +151,7 @@ typedef struct {
             }
         }
     ```
-    3. ** Create Tasks **
+3. **Create Tasks**
     ```c
         minirtos_AddTask(
             &ledTask,
@@ -181,7 +167,8 @@ typedef struct {
         );
     ```
 
-    4. ** Run Scheduler **
+4. **Run Scheduler**
+   
     ```c
         while(1)
         {
@@ -189,23 +176,17 @@ typedef struct {
         }
     ```
 
----
-
 ## 📌 Limitations
-    - No task preemption
-    - No priority-based scheduling
-    - No software timers
-    - No mutexes or semaphores
-    - Requires external system tick source
-
----
+- No task preemption
+- No priority-based scheduling
+- No software timers
+- No mutexes or semaphores
+- Requires external system tick source
 
 ## 📜 License
-    Released under the MIT License.
+Released under the MIT License.
 
----
-
-##👨‍💻 Author
-    Sourabh Potdar
-    Embedded Systems Developer
+## 👨‍💻 Author
+Sourabh Potdar
+Embedded Systems Developer
 
